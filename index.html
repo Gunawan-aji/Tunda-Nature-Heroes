@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunda Nature Heroes</title>
+
+    <!-- logo -->
+    <link rel="icon" type="png/jpg" href="img/logo bta.png" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="peta.js">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/logo bta.png" alt="Logo" class="navbar-logo">Tunda Nature Heroes 1.0
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#divisi">Divisi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#peta">Tunda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://banten-take-action.vercel.app/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tunda Nature Heroes</h1>
+                <p class="lead">Menjelajahi Keindahan Pulau Tunda, Banten<br>
+                Wisata Alam & Budaya yang Berkelanjutan</p>
+                <button class="btn btn-hero" onclick="scrollToSection('about')">
+                    Jelajahi Sekarang <i class="bi bi-arrow-down-circle ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section TNH-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Tentang Tunda Nature Heroes</h2>
+                    <p class="lead text-justify">Tunda Nature Heroes adalah nama program volunteer yang menjadi bagian dari organisasi Banten Take Action. Sesuai dengan namanya, program ini bertujuan untuk menjadikan para peserta sebagai pahlawan alam di Pulau Tunda, Banten.</p>
+                    <p class="text-justify">Program ini bukan sekadar perjalanan liburan, melainkan sebuah aksi nyata di mana para volunteer terjun langsung ke tengah masyarakat untuk memberikan dampak positif. </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/tnh/7.JPG" alt="Pulau Tunda" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisi Section -->
+    <section id="divisi" class="programs-section py-5">
+        <div class="container">
+            <h2 class="section-title">Divisi Tunda Nature Heroes</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card p-4">
+                        <div class="program-icon">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Pendidikan</h4>
+                        <p class="text-center">Mengedukasi masyarakat dan peserta tentang pentingnya pelestarian alam dan budaya.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card p-4">
+                        <div class="program-icon">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Kesehatan</h4>
+                        <p class="text-center">Program kesehatan dan sosial untuk meningkatkan kesejahteraan masyarakat.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card p-4">
+                        <div class="program-icon">
+                            <i class="bi bi-camera"></i>
+                        </div>
+                        <h4 class="text-center mb-3">Pariwisata dan Lingkungan</h4>
+                        <p class="text-center">Mengembangkan pariwisata yang berkelanjutan sambil menjaga kelestarian alam.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs-section py-5">
+        <div class="container">
+            <h2 class="section-title">Program Tunda Nature Heroes</h2>
+            <div class="row">
+                <h2 class="section-title text-start">Divisi Kesehatan</h2>
+                <!--  -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/kes/5.png" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/kes/6.png" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/kes/4.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/kes/3.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/kes/2.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/kes/1.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <!--  -->
+                <h2 class="section-title text-start">Divisi Pendidikan</h2>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card p-4" onclick="showProgramDetail('Roleplay', 'Kegiatan bemain peran tentang tokoh atau peristiwa alam dan lingkungan Meminta anak maju ke depan menjelaskan atau menceritakan tentang kehidupan selama di pulau. Manfaat: Mengasah keterampilan komunikasi.  Memahami peran manusia dalam menjaga alam. Meningkatkan empati terhadap lingkungan')">
+                        <h4 class="text-center mb-3">Roleplay</h4>
+                        <p class="text-justify">Kegiatan bemain peran tentang tokoh atau peristiwa alam dan lingkungan (Meminta anak maju ke depan menjelaskan atau menceritakan tentang kehidupan selama di pulau)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/pend/6.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/pend/2.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/pend/3.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/pend/5.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/pend/8.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <!--  -->
+                <h2 class="section-title text-start">Divisi Pariwisata dan lingkungan</h2>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card p-4" onclick="showProgramDetail('TUNKREA', 'Tunkrea (Tunda Kreatif) adalah program pemanfaatan limbah menjadi produk kreatif bernilai guna, estetis, dan edukatif untuk mengurangi sampah, khususnya plastik dan anorganik, serta meningkatkan kesadaran pengelolaan lingkungan. Adapun rangkaian program dari Tunkrea ini adalah: Membuat papan “umur sampah” sebagai simbolis kenangan dari banten take action.')">
+                        <h4 class="text-center mb-3">TUNKREA (Tunda Kreasi Dan Berkarya)</h4>
+                        <p class="text-justify">Tunkrea (Tunda Kreatif) adalah program pemanfaatan limbah menjadi produk kreatif bernilai guna, estetis, dan edukatif untuk mengurangi sampah, khususnya plastik dan anorganik, serta meningkatkan kesadaran pengelolaan lingkungan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card p-4" onclick="showProgramDetail('Tunda Bersih', 'Program ini bertujuan mengurangi timbunan sampah, menjaga kebersihan, serta menumbuhkan kesadaran bersama untuk melestarikan Pulau Tunda. Adapun rangkaian program dari kegiatan ini adalah: Sosialisasi edukasi lingkungan tentang jenis-jenis sampah, dampaknya terhadap ekosistem, dan pentingnya pengurangan sampah sejak dari sumbernya. Bersih Lingkungan yang dilanjutkan dengan Pemusnahan sampah menggunakan mesin pemusnah sampah hasil kolaborasi dengan mahasiswa ITB.')">
+                        <h4 class="text-center mb-3">Tunda Bersih</h4>
+                        <p class="text-justify">Program ini bertujuan mengurangi timbunan sampah, menjaga kebersihan, serta menumbuhkan kesadaran bersama untuk melestarikan Pulau Tunda.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card p-4" onclick="showProgramDetail('Tunda Nature Heroes: Menjaga Surga Kecil', 'Tunda Nature Heroes: Menjaga Surga Kecil” adalah program dokumenter yang bertujuan menjaga serta melestarikan Pulau Tunda, surga kecil ini, agar terus mengalami peningkatan pariwisata. Dokumenter ini merekam perjalanan para relawan dalam mengembangkan Pulau Tunda melalui tiga divisi utama: Pendidikan, Kesehatan, serta Pariwisata dan Lingkungan. Berfungsi sebagai arsip visual dan media edukasi, dokumenter ini menampilkan kolaborasi Banten Take Action, pemuda, dan masyarakat setempat dalam mengajar anak-anak, memberikan layanan kesehatan, melakukan aksi bersih pantai, konservasi, dan mengelola pariwisata berkelanjutan. Selain menjadi catatan sejarah kegiatan, dokumenter ini diharapkan menginspirasi serta mengajak masyarakat luas untuk berperan aktif dalam melestarikan Pulau Tunda demi keberlanjutan pesona alam dan pertumbuhan pariwisatanya.')">
+                        <h4 class="text-center mb-3">Tunda Nature Heroes: Menjaga Surga Kecil</h4>
+                        <p class="text-justify">Tunda Nature Heroes: Menjaga Surga Kecil” adalah program dokumenter yang bertujuan menjaga serta melestarikan Pulau Tunda, surga kecil ini, agar terus mengalami peningkatan pariwisata. Dokumenter ini merekam perjalanan para relawan dalam mengembangkan Pulau Tunda melalui tiga divisi utama: Pendidikan, Kesehatan, serta Pariwisata dan Lingkungan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/parling/1.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/parling/2.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/parling/7.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/parling/8.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/parling/9.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="program-card program-card-image p-4">
+                        <img src="img/tnh/parling/6.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Galeri Tunda Nature Heroes</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/tnh/6.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/tnh/8.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/tnh/10.jpg" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/tnh/11.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/tnh/13.png" alt="Pantai Tunda">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/tnh/12.JPG" alt="Pantai Tunda">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- About Section -->
+    <section id="peta" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Peta & Tentang Pulau Tunda</h2>
+                    <p class="lead text-justify">Pulau Tunda adalah permata tersembunyi di utara Provinsi Banten yang menawarkan keindahan alam yang masih alami dan budaya maritim yang kaya.</p>
+                    <p class="text-justify">Dengan luas sekitar 289 hektar, pulau ini memiliki pantai berpasir putih, terumbu karang yang indah, dan ekosistem mangrove yang terjaga. Tunda Nature Heroes berkomitmen untuk mengembangkan pariwisata berkelanjutan yang memberikan manfaat bagi masyarakat lokal sambil melestarikan lingkungan.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <h3 class="text-primary">289</h3>
+                                <p>Hektar Luas Pulau</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center">
+                                <h3 class="text-primary">5+</h3>
+                                <p>Spot Wisata Utama</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/peta/PETA PULAU TUNDA.jpg" alt="Pulau Tunda" class="img-fluid rounded shadow" id="myImage">
+                </div>
+
+                <div id="image-overlay">
+                    <span id="close-btn">&times;</span>
+                    <img id="enlarged-image" src="" alt="Pulau Tunda">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="bi bi-tree-fill me-2"></i>Banten Take Action</h5>
+                    <p>Menggerakkan Banten, Merajut Harmoni antara Manusia, Alam, dan Budaya.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bantentakeaction?igsh=MWk0NjNrZXlwZWliaw=="><i class="bi bi-instagram"></i></a>
+                        <a href="https://youtube.com/@bantentakeaction?si=AmeOGgKAvqsYLUj8"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@banten.takeaction?_t=ZS-8yno2ef4RZy&_r=1"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Kontak</h5>
+                    <p><i class="bi bi-geo-alt me-2"></i>Banten, Indonesia</p>
+                    <p><i class="bi bi-envelope me-2"></i>email@gmail.com</p>
+                    <p><i class="bi bi-phone me-2"></i>+62 838 9334 5226</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Program</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#programs" class="text-decoration-none">Divisi Kesehatan</a></li>
+                            <li><a href="#programs" class="text-decoration-none">Divisi Pendidikan</a></li>
+                            <li><a href="#programs" class="text-decoration-none">Divisi Pariwisata & Lingkungan</a></li>
+                        </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Banten Take Action. All rights reserved. made by <a href="https://gunawan-ten.vercel.app/" class="linkk">Gunawan Wijayanto</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Gallery Detail Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="galleryModalContent"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Program Detail Modal -->
+    <div class="modal fade" id="programModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="programModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="programModalContent"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const myImage = document.getElementById('myImage');
+        const overlay = document.getElementById('image-overlay');
+        const enlargedImage = document.getElementById('enlarged-image');
+        const closeBtn = document.getElementById('close-btn');
+
+    myImage.onclick = function() {
+        overlay.style.display = 'flex';
+        enlargedImage.src = this.src; // Mengambil sumber gambar yang diklik
+    }
+
+    closeBtn.onclick = function() {
+        overlay.style.display = 'none';
+    }
+
+// Menutup overlay ketika mengklik di luar gambar
+overlay.onclick = function(event) {
+    if (event.target === overlay) {
+        overlay.style.display = 'none';
+    }
+}
+
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Gallery detail modal
+        function showGalleryDetail(title, content) {
+            document.getElementById('galleryModalTitle').textContent = title;
+            document.getElementById('galleryModalContent').textContent = content;
+            new bootstrap.Modal(document.getElementById('galleryModal')).show();
+        }
+
+        // Program detail modal
+        function showProgramDetail(title, content) {
+            document.getElementById('programModalTitle').textContent = title;
+            document.getElementById('programModalContent').textContent = content;
+            new bootstrap.Modal(document.getElementById('programModal')).show();
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(46, 139, 87, 0.95), rgba(32, 178, 170, 0.95))';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+        // Active nav link
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

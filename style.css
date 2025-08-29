@@ -1,0 +1,771 @@
+/* ===== CSS VARIABLES ===== */
+:root {
+    --primary-color: #2E8B57;
+    --secondary-color: #20B2AA;
+    --accent-color: #FFD700;
+    --text-dark: #2C3E50;
+    --text-light: #ffffff;
+    --bg-light: #f8f9fa;
+    --bg-dark: #2C3E50;
+    --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-medium: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-heavy: 0 10px 30px rgba(0,0,0,0.3);
+    --border-radius: 15px;
+    --transition: all 0.3s ease;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== NAVIGATION STYLES ===== */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: var(--shadow-light);
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 0;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-light) !important;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: var(--transition);
+    border-radius: 8px;
+    margin: 0 2px;
+    color: var(--text-light) !important;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link.active {
+    background: rgba(255, 215, 0, 0.2);
+    color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    width: 80%;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    background: linear-gradient(rgba(46, 139, 87, 0.8), rgba(32, 178, 170, 0.8)), 
+                url('img/tnh/7.JPG') center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+ .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.btn-hero {
+    background: var(--accent-color);
+    color: var(--text-dark);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background: #FFA500;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
+
+/* ===== SECTION STYLES ===== */
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* ===== GALLERY SECTION ===== */
+.gallery-section {
+    background: var(--bg-light);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.gallery-item image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* ===== PROGRAMS SECTION ===== */
+.programs-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.program-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.program-card-image img {
+    width: 100%;
+    height: 100%; /* Atur tinggi agar mengisi penuh parent div */
+    object-fit: cover; /* Penting: Memastikan gambar mengisi area tanpa terdistorsi */
+    border-radius: 10px; /* Memastikan sudut gambar sesuai dengan kartu */
+}
+
+.program-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.program-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-size: 1.5rem;
+}
+
+.program-description {
+    text-align: center;
+    color: #666;
+    flex-grow: 1;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    background: white;
+}
+
+.about-image {
+    transition: var(--transition);
+}
+
+.about-image:hover {
+    transform: scale(1.02);
+}
+
+.stats-item {
+    padding: 1rem;
+}
+
+.stats-number {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stats-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#about img {
+    height: 300px; /* Atur tinggi yang Anda inginkan, contoh: 400px */
+    object-fit: cover; /* Penting! Ini akan memotong gambar agar pas tanpa distorsi */
+    width: 100%; /* Pastikan lebar tetap 100% dari kolom */
+    margin-bottom: 3rem;
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+    background: var(--bg-dark);
+    color: whte;
+}
+
+.social-link {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links {
+    color: white;
+    font-size: 1.5rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.contact-info p {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+/* contact section */
+/* Styling untuk bagian contact */
+.contactt.section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+/* Judul dan Subjudul */
+.section-tittle {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-tittle h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333; /* Ganti dengan warna tema Anda */
+}
+
+.contact-tittle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-sub-tittle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666; /* Warna abu-abu */
+    margin-bottom: 40px;
+}
+
+/* Styling Peta dan Form */
+.map {
+    width: 48%; /* Lebar peta */
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    width: 48%; /* Lebar form */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f0f2f5;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: #007bff; /* Ganti dengan warna tema Anda */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-group i {
+    color: #888;
+    margin-right: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none; /* Mencegah user mengubah ukuran textarea */
+}
+
+/* Styling Tombol */
+.btn2 {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Warna hover tombol */
+}
+
+.linkk {
+    text-decoration: none;
+}
+
+/* Gaya untuk Overlay */
+#image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none; /* Sembunyikan secara default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    padding-top: 70px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .map,
+    form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-tittle h2 {
+        font-size: 32px;
+    }
+    
+    .contact-tittle {
+        font-size: 24px;
+    }
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Extra Large Devices (1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Large Devices (992px to 1199px) */
+@media (max-width: 1199px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Medium Devices (768px to 991px) */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        margin: 2px 0;
+    }
+    
+    .dropdown-menu {
+        background: rgba(46, 139, 87, 0.95);
+        margin-left: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .gallery-item {
+        height: 250px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .program-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .stats-number {
+        font-size: 2rem;
+    }
+}
+
+/* Small Devices (576px to 767px) */
+@media (max-width: 767px) {
+    .hero-section {
+        height: 80vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn-hero {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .gallery-item {
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+    
+    .program-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .program-title {
+        font-size: 1.3rem;
+    }
+    
+    .stats-number {
+        font-size: 1.8rem;
+    }
+    
+    .stats-label {
+        font-size: 0.8rem;
+    }
+    
+    .search-input {
+        width: 150px;
+    }
+    
+    .search-input:focus {
+        width: 180px;
+    }
+}
+
+/* Extra Small Devices (less than 576px) */
+@media (max-width: 575px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .hero-section {
+        height: 70vh;
+        padding: 1rem 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .btn-hero {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .gallery-item {
+        height: 180px;
+    }
+    
+    .gallery-overlay {
+        padding: 15px;
+    }
+    
+    .gallery-overlay h5 {
+        font-size: 1rem;
+    }
+    
+    .gallery-overlay p {
+        font-size: 0.8rem;
+    }
+    
+    .program-card {
+        padding: 1.5rem !important;
+    }
+    
+    .program-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .program-title {
+        font-size: 1.1rem;
+    }
+    
+    .program-description {
+        font-size: 0.9rem;
+    }
+    
+    .stats-number {
+        font-size: 1.5rem;
+    }
+    
+    .footer-section {
+        padding: 2rem 0 !important;
+    }
+    
+    .social-links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .social-link {
+        font-size: 1.2rem;
+    }
+}
+
+/* Landscape Mobile Devices */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        height: 100vh;
+        padding: 1rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .gallery-image,
+    .about-image {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
