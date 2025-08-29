@@ -91,7 +91,7 @@ html {
 /* ===== HERO SECTION ===== */
 .hero-section {
     background: linear-gradient(rgba(46, 139, 87, 0.8), rgba(32, 178, 170, 0.8)), 
-                url('img/tnh/7.JPG') center/cover;
+                url('img/tnh/7.jpg') center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
